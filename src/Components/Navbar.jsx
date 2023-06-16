@@ -1,25 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
-    let titulos = ['Home', 'Contact', 'About', 'Pizzas']
-
-    const navbarStyle = {
-      display: 'flex', 
-      flexDirection: 'row', 
-      justifyContent: 'space-around',
-      backgroundColor: 'grey',
-      boxShadow: '3px 5px 8px #000',
-      borderRadius: '10px'
-    }
 
   return (
-    <div style={navbarStyle} >
-        {titulos.map((titulo, index) => (
-            <div key={index}>
-                <h4>{titulo}</h4>
-            </div>
-        ))}
+    <div className='navbarStyle' >
+        <Link to='/'><h3 className='link'>Home</h3></Link>
+        <Link to='/contacto'><h3 className='link'>Contact</h3></Link>
+        <Link to='carrito'><h3 className='link'>Carrito</h3></Link>
     </div>
   )
 }

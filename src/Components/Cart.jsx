@@ -1,4 +1,5 @@
 import React from 'react'
+import Form from './Form'
 
 const Cart = ({cart}) => {
   
@@ -11,10 +12,13 @@ const Cart = ({cart}) => {
   }
 
     return (
-    <div style={cartStyle}>
+    <>
+      <div className='cartStyle'>
         <h3>Carrito de compras:</h3>
-        {cart.map((item, index) => <li key={index}>{item.tipo}</li>)}
-    </div>
+        {cart.map((item, index) => <li key={index}>{item.tipo} - cantidad: {item.cantidad}</li>)}
+      </div>
+      <Form/>
+    </>
   )
 }
 

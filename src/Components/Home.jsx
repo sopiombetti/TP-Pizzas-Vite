@@ -22,7 +22,7 @@ const Home = ({setCart, cart}) => {
     }
 
     return (
-      <div style={homeStyle}>
+      <div className='homeStyle'>
           <h1 >Lista de pizzas</h1>
           {pizzas.map(pizza => <Card cart={cart} setCart={setCart} key={pizza.id} menu={pizza}/>)}
       </div>

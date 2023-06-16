@@ -1,43 +1,80 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.navbarStyle {
+  width: 98vw;
+  display: flex; 
+  flex-direction:  row; 
+  justify-content: space-around;
+  background-color: rgb(38, 16, 78);
+  box-shadow: 3px 5px 8px #000;
+  border-radius: 10px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.homeStyle {
+  width: 98vw;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cartStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(150, 127, 243);
+  margin-top: 50px;
+  box-shadow: 3px 5px 8px #000;
+  border-radius: 10px;
+  color: black;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.link {
+  color: rgb(255, 255, 255);
 }
 
-.card {
-  padding: 2em;
+.link:hover {
+  color: rgba(255, 255, 255, 0.464);
 }
 
-.read-the-docs {
-  color: #888;
+.contacto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  
 }
 
+.contacto h2{
+  color: #000;
+}
+
+.contacto-botones{
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+  margin-top: 30px;
+}
+
+.contacto-botones button{
+  background-color: rgb(65, 41, 132);
+  color: white;
+}
+
+.contacto-botones button:hover{
+  background-color: rgba(65, 41, 132, 0.718);
+}
+
+.character{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(118, 89, 249, 0.664);
+  color: black;
+  margin-top: 30px;
+  width: 400px;
+  height: 440px;
+  border-radius: 15px;
+  border: 3px solid #000;
+}
